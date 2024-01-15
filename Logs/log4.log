@@ -131,3 +131,49 @@
 14:15:16.337 [main] INFO  - Search initiated
 14:15:17.346 [main] INFO  - Quit the browser
 14:15:17.346 [main] INFO  - Driver Quit
+14:20:10.539 [main] INFO  - Initialize Chrome Driver
+14:20:10.709 [main] INFO  - Screen maximized and cookies deleted
+14:20:12.382 [main] INFO  - Launch browser
+14:20:12.411 [main] INFO  - Initialize the Google page elements 
+14:20:12.412 [main] INFO  - Initialize the Yahoo page elements 
+14:20:14.584 [main] INFO  - PageLoadWait is applied
+14:20:14.589 [main] INFO  - URL is Launched
+14:20:14.590 [main] INFO  - Url is launched
+14:20:15.023 [main] INFO  - Initiate the Google Search with Search key 
+14:20:15.023 [main] INFO  - PageLoadWait is applied
+14:20:15.032 [main] INFO  - Search initiated
+14:20:18.657 [main] INFO  - Assertion pass
+14:20:18.686 [main] INFO  - Launch browser
+14:20:18.686 [main] INFO  - Initialize the Google page elements 
+14:20:18.686 [main] INFO  - Initialize the Yahoo page elements 
+14:20:19.746 [main] INFO  - PageLoadWait is applied
+14:20:19.755 [main] INFO  - URL is Launched
+14:20:19.755 [main] INFO  - Url is launched
+14:20:20.832 [main] INFO  - Initiate the yahoo Search with Search key
+14:20:20.832 [main] INFO  - PageLoadWait is applied
+14:20:20.836 [main] INFO  - Search initiated
+14:20:21.849 [main] INFO  - Quit the browser
+14:20:21.849 [main] INFO  - Driver Quit
+14:21:59.482 [main] INFO  - Initialize Chrome Driver
+14:21:59.651 [main] INFO  - Screen maximized and cookies deleted
+14:22:01.038 [main] INFO  - Launch browser
+14:22:01.062 [main] INFO  - Initialize the Google page elements 
+14:22:01.063 [main] INFO  - Initialize the Yahoo page elements 
+14:22:05.706 [main] INFO  - PageLoadWait is applied
+14:22:05.711 [main] INFO  - URL is Launched
+14:22:05.712 [main] INFO  - Url is launched
+14:22:09.412 [main] INFO  - Initiate the Google Search with Search key 
+14:22:09.412 [main] INFO  - PageLoadWait is applied
+14:22:09.417 [main] INFO  - Search initiated
+14:22:09.472 [main] INFO  - Assertion pass
+14:22:09.496 [main] INFO  - Launch browser
+14:22:09.497 [main] INFO  - Initialize the Google page elements 
+14:22:09.497 [main] INFO  - Initialize the Yahoo page elements 
+14:22:10.421 [main] INFO  - PageLoadWait is applied
+14:22:10.426 [main] INFO  - URL is Launched
+14:22:10.426 [main] INFO  - Url is launched
+14:22:11.485 [main] INFO  - Initiate the yahoo Search with Search key
+14:22:11.485 [main] INFO  - PageLoadWait is applied
+14:22:11.489 [main] INFO  - Search initiated
+14:22:12.276 [main] INFO  - Quit the browser
+14:22:12.276 [main] INFO  - Driver Quit

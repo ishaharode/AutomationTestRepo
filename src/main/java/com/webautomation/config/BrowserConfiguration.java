@@ -33,7 +33,7 @@
                 if(isHeadless)
                 {
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments(String.valueOf(isHeadless));
+                    options.addArguments("--headless");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(options);
                 }
