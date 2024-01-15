@@ -59,6 +59,4 @@
             log.info("Quit the browser");
         }
 
-
-
     }

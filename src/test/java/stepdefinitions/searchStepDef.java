@@ -1,6 +1,6 @@
-package StepDefinitions;
+package stepdefinitions;
 
-import BaseTest.BaseTest;
+import basetest.BaseTest;
 import com.webautomation.config.BrowserConfiguration;
 import com.webautomation.config.BrowserWaits;
 import com.webautomation.pagemethods.HomePage;

@@ -1,4 +1,4 @@
-package BaseTest;
+package basetest;
 
 import com.webautomation.config.BrowserConfiguration;
 import com.webautomation.exceptions.DriverNotFoundException;

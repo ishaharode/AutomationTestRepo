@@ -78,3 +78,33 @@
 10:52:03.064 [main] INFO  - Search initiated
 10:52:03.546 [main] INFO  - Quit the browser
 10:52:03.546 [main] INFO  - Driver Quit
+10:59:25.042 [main] INFO  - Initialize Chrome Driver
+10:59:25.180 [main] INFO  - Screen maximized and cookies deleted
+10:59:25.979 [main] INFO  - Launch browser
+10:59:27.422 [main] INFO  - PageLoadWait is applied
+10:59:27.425 [main] INFO  - Url is launched
+10:59:27.689 [main] INFO  - PageLoadWait is applied
+10:59:27.691 [main] INFO  - Search initiated
+10:59:32.351 [main] INFO  - Assertion pass
+10:59:32.364 [main] INFO  - Launch browser
+10:59:33.084 [main] INFO  - PageLoadWait is applied
+10:59:33.089 [main] INFO  - Url is launched
+10:59:33.952 [main] INFO  - PageLoadWait is applied
+10:59:33.955 [main] INFO  - Search initiated
+10:59:34.469 [main] INFO  - Quit the browser
+10:59:34.469 [main] INFO  - Driver Quit
+11:00:30.891 [main] INFO  - Initialize Chrome Driver
+11:00:31.018 [main] INFO  - Screen maximized and cookies deleted
+11:00:31.711 [main] INFO  - Launch browser
+11:00:33.237 [main] INFO  - PageLoadWait is applied
+11:00:33.239 [main] INFO  - Url is launched
+11:00:33.557 [main] INFO  - PageLoadWait is applied
+11:00:33.559 [main] INFO  - Search initiated
+11:00:36.408 [main] INFO  - Assertion pass
+11:00:36.418 [main] INFO  - Launch browser
+11:00:37.050 [main] INFO  - PageLoadWait is applied
+11:00:37.052 [main] INFO  - Url is launched
+11:00:37.974 [main] INFO  - PageLoadWait is applied
+11:00:37.976 [main] INFO  - Search initiated
+11:00:38.337 [main] INFO  - Quit the browser
+11:00:38.337 [main] INFO  - Driver Quit
