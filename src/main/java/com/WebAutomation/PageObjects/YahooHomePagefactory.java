@@ -7,20 +7,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BingHomePagefactory {
+public class YahooHomePagefactory {
     public static WebDriver driver;
 
-    @FindBy(xpath="//textarea[@type='search']")
-    WebElement BingSearchBar;
+    @FindBy(xpath="//input[@placeholder=\"Search the web\"]")
+    WebElement yahooSearchBar;
 
-    @FindBy(xpath="//a[text()=\"Selenium Tutorial - Guru99\"]")
+    @FindBy(xpath="(//span[contains(text(),\"Selenium Testing\")])[1]")
     WebElement firstSearchResult;
 
 
     public void enterTheSearchTerm(String searchKey)
     {
-        BingSearchBar.sendKeys(searchKey);
-        BingSearchBar.sendKeys(Keys.ENTER);
+        yahooSearchBar.sendKeys(searchKey);
+        yahooSearchBar.sendKeys(Keys.ENTER);
 
     }
 
@@ -31,9 +31,9 @@ public class BingHomePagefactory {
 
 
     }
-    public BingHomePagefactory()
+    public YahooHomePagefactory()
     {
-        this.driver =  driver= BrowserConfiguration.driver;
+        this.driver = BrowserConfiguration.driver;
         PageFactory.initElements(driver,this);
 
     }

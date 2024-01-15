@@ -8,8 +8,8 @@ Feature: Validation of search result
 
     Examples:
     |searchEngine|searchTerm|expectedResult|
-   # |Google      |Java Tutorial|Java Tutorial|
-    |Bing        |Selenium Tutorial|Selenium Tutorial|
+    |Google      |Java Tutorial|Java Tutorial|
+    |Yahoo        |Selenium Tutorial|Selenium Tutorial|
 
 
 
