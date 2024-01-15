@@ -1,27 +1,22 @@
-package com.WebAutomation.Config;
+package com.webautomation.config;
 
-import com.WebAutomation.Utils.TestLogger;
+import com.webautomation.utils.TestLogger;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
 import java.time.Duration;
 
-import java.util.concurrent.TimeUnit;
-
-import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class BrowserWaits {
-    public static WebDriver driver;
-    public static Logger log;
+    private WebDriver driver;
+    private Logger log;
 
     public BrowserWaits()
     {
-        log = TestLogger.logger("BrowserWaits");
-        driver=BrowserConfiguration.driver;
+        log = TestLogger.logger(BrowserWaits.class);
+        driver=BrowserConfiguration.getDriver();
     }
     public void webDriverWait(int time)
     {
@@ -45,9 +40,5 @@ public class BrowserWaits {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement webElement = wait.until(ExpectedConditions.elementToBeClickable(element));
         return webElement;
-
-
     }
-
-
 }
