@@ -3,12 +3,12 @@
 <suite name="Test-Suit">
     <parameter name="browser" value="chrome"/>
    <listeners>
-       <listener class-name="TestListeners.SuiteListener"></listener>
+       <listener class-name="testlisteners.SuiteListener"></listener>
    </listeners>
 
     <test name="Test">
         <classes>
-            <class name="TestRunners.TestRunner"/>
+            <class name="testrunners.TestRunner"/>
         </classes>
     </test><!-- Test -->
 </suite><!-- Test -->

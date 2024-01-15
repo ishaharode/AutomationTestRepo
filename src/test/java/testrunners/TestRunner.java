@@ -1,4 +1,4 @@
-package TestRunners;
+package testrunners;
 
 import com.webautomation.config.BrowserConfiguration;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -9,7 +9,7 @@ import org.testng.annotations.*;
 @CucumberOptions(
 
         features ="src/test/java/Features/Search.feature",
-        glue ={"StepDefinitions"},
+        glue ={"stepdefinitions"},
         plugin = { "pretty","html:target/cucumber-reports/cucumberreport.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
         tags= "@Test"
