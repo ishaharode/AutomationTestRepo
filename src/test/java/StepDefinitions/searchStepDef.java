@@ -1,12 +1,12 @@
 package StepDefinitions;
 
 import BaseTest.BaseTest;
-import com.WebAutomation.Config.BrowserConfiguration;
-import com.WebAutomation.Config.BrowserWaits;
-import com.WebAutomation.PageMethods.HomePage;
-import com.WebAutomation.PageObjects.GoogleHomePageFactory;
-import com.WebAutomation.PageObjects.YahooHomePagefactory;
-import com.WebAutomation.Utils.Constants;
+import com.webautomation.config.BrowserConfiguration;
+import com.webautomation.config.BrowserWaits;
+import com.webautomation.pagemethods.HomePage;
+import com.webautomation.pageobjects.GoogleHomePageFactory;
+import com.webautomation.pageobjects.YahooHomePagefactory;
+import com.webautomation.utils.Constants;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -41,10 +41,10 @@ public class searchStepDef extends BrowserConfiguration {
 
         switch (searchEngine) {
             case "Google":
-                homePage.UrlLaunch(Constants.googleurl);
+                homePage.UrlLaunch(Constants.GOOGLE_URL);
                 break;
             case "Yahoo":
-                homePage.UrlLaunch(Constants.yahooUrl);
+                homePage.UrlLaunch(Constants.YAHOO_URL);
                 break;
 
         }
