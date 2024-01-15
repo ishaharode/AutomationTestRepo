@@ -1,9 +1,12 @@
 package testrunners;
 
 import com.webautomation.config.BrowserConfiguration;
+import com.webautomation.utils.ConfigProperties;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.*;
+
+import java.io.IOException;
 
 
 @CucumberOptions(
@@ -20,12 +23,12 @@ import org.testng.annotations.*;
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
-    //@BeforeSuite(alwaysRun = true)
     @BeforeTest
     @Parameters("browser")
-    public void initialize(String browser){
-        System.out.println(browser);
+    public void initialize(String browser) throws IOException {
+
         BrowserConfiguration.initializeDriver(browser);
+
     }
 
 }

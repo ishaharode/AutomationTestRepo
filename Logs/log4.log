@@ -108,3 +108,26 @@
 11:00:37.976 [main] INFO  - Search initiated
 11:00:38.337 [main] INFO  - Quit the browser
 11:00:38.337 [main] INFO  - Driver Quit
+14:15:06.598 [main] INFO  - Initialize Chrome Driver
+14:15:06.765 [main] INFO  - Screen maximized and cookies deleted
+14:15:08.262 [main] INFO  - Launch browser
+14:15:08.290 [main] INFO  - Initialize the Google page elements 
+14:15:08.292 [main] INFO  - Initialize the Yahoo page elements 
+14:15:10.070 [main] INFO  - PageLoadWait is applied
+14:15:10.075 [main] INFO  - URL is Launched
+14:15:10.075 [main] INFO  - Url is launched
+14:15:10.489 [main] INFO  - Initiate the Google Search with Search key 
+14:15:10.490 [main] INFO  - PageLoadWait is applied
+14:15:10.495 [main] INFO  - Search initiated
+14:15:14.116 [main] INFO  - Assertion pass
+14:15:14.143 [main] INFO  - Launch browser
+14:15:14.143 [main] INFO  - Initialize the Google page elements 
+14:15:14.143 [main] INFO  - Initialize the Yahoo page elements 
+14:15:15.268 [main] INFO  - PageLoadWait is applied
+14:15:15.271 [main] INFO  - URL is Launched
+14:15:15.271 [main] INFO  - Url is launched
+14:15:16.332 [main] INFO  - Initiate the yahoo Search with Search key
+14:15:16.332 [main] INFO  - PageLoadWait is applied
+14:15:16.337 [main] INFO  - Search initiated
+14:15:17.346 [main] INFO  - Quit the browser
+14:15:17.346 [main] INFO  - Driver Quit
