@@ -11,6 +11,3 @@ Feature: Validation of search result
     |Google      |Java Tutorial|Java Tutorial|
     |Yahoo        |Selenium Tutorial|Selenium Tutorial|
 
-
-
-

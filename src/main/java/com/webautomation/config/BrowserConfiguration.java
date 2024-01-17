@@ -23,10 +23,13 @@
 
         private static Boolean isHeadless;
         private static Logger log=LogManager.getLogger(BrowserConfiguration.class);
+        private static String browser;
 
-        public static void initializeDriver(String browser) throws IOException {
+        public static void initializeDriver() throws IOException {
+
             ConfigProperties.initializePropertyFile();
             isHeadless= ConfigProperties.getHeadlessMode();
+            String browser= ConfigProperties.getBrowser();
 
             if(browser.equalsIgnoreCase(Constants.CHROME_BROWSER))
             {

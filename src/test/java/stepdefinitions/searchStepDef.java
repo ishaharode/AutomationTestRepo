@@ -7,12 +7,16 @@ import com.webautomation.pagemethods.HomePage;
 import com.webautomation.pageobjects.GoogleHomePageFactory;
 import com.webautomation.pageobjects.YahooHomePagefactory;
 import com.webautomation.utils.Constants;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+
+import java.io.IOException;
 
 
 public class searchStepDef extends BrowserConfiguration {
@@ -24,8 +28,7 @@ public class searchStepDef extends BrowserConfiguration {
     public static Logger log;
     String searchEngine="";
 
-   public searchStepDef()
-   {
+   public searchStepDef() {
        log = LogManager.getLogger(searchStepDef.class);
        log.info("Launch browser");
        homePage = new HomePage();
@@ -82,7 +85,6 @@ public class searchStepDef extends BrowserConfiguration {
         }
 
     }
-
 
 
 }
