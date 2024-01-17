@@ -14,7 +14,7 @@
     import java.time.Duration;
 
     /***
-     *
+     * Instantiate the WebDriver
      */
     public class BrowserConfiguration {
 
