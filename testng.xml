@@ -6,7 +6,7 @@
        <listener class-name="testlisteners.SuiteListener"></listener>
    </listeners>
 
-    <test name="Test">
+    <test name="Test" parallel="tests" thread-count="2" >
         <classes>
             <class name="testrunners.TestRunner"/>
         </classes>

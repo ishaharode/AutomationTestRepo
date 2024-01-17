@@ -27,6 +27,15 @@ public class ConfigProperties {
         return null;
 
     }
+    public static String getBrowser()
+    {
+        String browser=ConfigProperties.prop.getProperty("browser");
+        if(!StringUtils.isEmpty(browser)){
+            return browser;
+        }
+        return null;
+
+    }
 
 
 
