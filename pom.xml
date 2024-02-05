@@ -15,6 +15,7 @@
         <cucumber.version>7.15.0</cucumber.version>
     </properties>
 
+
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -66,7 +67,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.8.0</version>
-            <scope>test</scope>
+
         </dependency>
 
 
@@ -110,6 +111,56 @@
 
 
     </dependencies>
+    <profiles>
+        <!-- Profile for running tests in the "qa" environment -->
+        <profile>
+            <id>qa</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>3.1.2</version>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+
+        </profile>
+
+        <!-- Profile for running tests in the "UAT" environment -->
+        <profile>
+            <id>uat</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>3.1.2</version>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+
+        </profile>
+    </profiles>
+
+
+
+
+
 
 
 </project>

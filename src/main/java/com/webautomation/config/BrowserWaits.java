@@ -2,6 +2,7 @@ package com.webautomation.config;
 
 import com.webautomation.utils.TestLogger;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -38,11 +39,16 @@ public class BrowserWaits {
     {
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
     }
-    public WebElement waitUntilElementToBeClickable(WebElement element)
+    public void waitUntilElementToBeClickable(WebElement element)
     {
         log.info("waiting for element to be clickable");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement webElement = wait.until(ExpectedConditions.elementToBeClickable(element));
-        return webElement;
     }
+    public void waitForElementToAppear(By findBy){
+        log.info("waiting for element to be clickable");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebElement webElement = wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+    }
+
 }

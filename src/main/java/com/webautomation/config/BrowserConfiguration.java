@@ -28,8 +28,8 @@
         public static void initializeDriver() throws IOException {
 
             ConfigProperties.initializePropertyFile();
-            isHeadless= ConfigProperties.getHeadlessMode();
-            String browser= ConfigProperties.getBrowser();
+            isHeadless= System.getProperty("browser.headlessMode")!=null ? Boolean.valueOf(System.getProperty("browser.headlessMode")) :ConfigProperties.getHeadlessMode();
+            String browser= System.getProperty("browser")!=null ? System.getProperty("browser") : ConfigProperties.getBrowser();
 
             if(browser.equalsIgnoreCase(Constants.CHROME_BROWSER))
             {
