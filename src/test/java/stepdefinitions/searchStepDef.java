@@ -89,16 +89,23 @@ public class searchStepDef extends BrowserConfiguration {
 
     @Given("visit the google search engine")
     public void visit_the_google_search_engine() {
+        homePage.UrlLaunch(Constants.GOOGLE_URL);
 
     }
 
     @When("enter the search key from excel file")
-    public void enter_the_search_key_from_excel_file() {
+    public void enter_the_search_key_from_excel_file() throws IOException {
+        String filepath = System.getProperty("user.dir")+"\\TestData\\SearchData.xlsx";
+        homePageFactory.GoogleSearchExcelData(filepath);
+
+        log.info("Search initiated");
 
     }
 
     @Then("verify the search result with expected outcome")
-    public void verify_the_search_result_with_expected_outcome() {
+    public void verify_the_search_result_with_expected_outcome() throws IOException {
+        String filepath = System.getProperty("user.dir")+"\\TestData\\SearchData.xlsx";
+        homePageFactory.compareSearchResult(filepath);
 
     }
 

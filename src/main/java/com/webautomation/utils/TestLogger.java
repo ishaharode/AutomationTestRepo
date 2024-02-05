@@ -9,6 +9,7 @@ public class TestLogger {
     public static Logger logger(Class classname){
         log = LogManager.getLogger(classname);
         return (log != null ? log : null);
+
     }
 
 }
