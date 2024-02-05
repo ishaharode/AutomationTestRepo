@@ -11,3 +11,9 @@ Feature: Validation of search result
     |Google      |Java Tutorial|Java Tutorial|
     |Yahoo        |Selenium Tutorial|Selenium Tutorial|
 
+
+  @Test
+  Scenario: verify the search functionality for various set of data
+    Given visit the google search engine
+    When enter the search key from excel file
+    Then verify the search result with expected outcome

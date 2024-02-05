@@ -87,4 +87,21 @@ public class searchStepDef extends BrowserConfiguration {
     }
 
 
+    @Given("visit the google search engine")
+    public void visit_the_google_search_engine() {
+
+    }
+
+    @When("enter the search key from excel file")
+    public void enter_the_search_key_from_excel_file() {
+
+    }
+
+    @Then("verify the search result with expected outcome")
+    public void verify_the_search_result_with_expected_outcome() {
+
+    }
+
+
+
 }
