@@ -1,6 +1,117 @@
-19:26:31.530 [main] INFO  - Initialize Chrome Driver
-19:26:31.749 [main] INFO  - Screen maximized and cookies deleted
-19:26:32.051 [main] INFO  - Quit the browser
-19:26:32.977 [main] INFO  - Initialize Chrome Driver
-19:26:33.165 [main] INFO  - Screen maximized and cookies deleted
-19:26:33.384 [main] INFO  - Quit the browser
+15:22:52.631 [main] INFO  - Test Execution Started
+15:22:53.911 [main] INFO  - Initialize Chrome Driver
+15:22:54.047 [main] INFO  - Screen maximized and cookies deleted
+15:22:54.057 [main] INFO  - Launch browser
+15:22:54.067 [main] INFO  - Initialize the Google page elements 
+15:22:54.067 [main] INFO  - Initialize the Yahoo page elements 
+15:22:55.664 [main] INFO  - PageLoadWait is applied
+15:22:55.666 [main] INFO  - URL is Launched
+15:22:55.666 [main] INFO  - Url is launched
+15:22:55.982 [main] INFO  - Initiate the Google Search with Search key 
+15:22:55.982 [main] INFO  - PageLoadWait is applied
+15:22:55.984 [main] INFO  - Search initiated
+15:22:55.986 [main] INFO  - waiting for element to be clickable
+15:22:59.643 [main] INFO  - Get the actual search result
+15:22:59.645 [main] INFO  - Assertion pass
+15:22:59.746 [main] INFO  - Quit the browser
+15:22:59.752 [main] INFO  - Test Passed
+15:22:59.752 [main] INFO  - Test Execution Started
+15:23:00.395 [main] INFO  - Initialize Chrome Driver
+15:23:00.535 [main] INFO  - Screen maximized and cookies deleted
+15:23:00.535 [main] INFO  - Launch browser
+15:23:00.535 [main] INFO  - Initialize the Google page elements 
+15:23:00.535 [main] INFO  - Initialize the Yahoo page elements 
+15:23:01.616 [main] INFO  - PageLoadWait is applied
+15:23:01.616 [main] INFO  - URL is Launched
+15:23:01.616 [main] INFO  - Url is launched
+15:23:02.554 [main] INFO  - Initiate the yahoo Search with Search key
+15:23:02.556 [main] INFO  - PageLoadWait is applied
+15:23:02.557 [main] INFO  - Search initiated
+15:23:02.654 [main] INFO  - Quit the browser
+15:23:02.658 [main] INFO  - Test Passed
+15:23:02.658 [main] INFO  - Test Execution Started
+15:23:03.304 [main] INFO  - Initialize Chrome Driver
+15:23:03.433 [main] INFO  - Screen maximized and cookies deleted
+15:23:03.437 [main] INFO  - Launch browser
+15:23:03.437 [main] INFO  - Initialize the Google page elements 
+15:23:03.437 [main] INFO  - Initialize the Yahoo page elements 
+15:23:05.268 [main] INFO  - PageLoadWait is applied
+15:23:05.268 [main] INFO  - URL is Launched
+15:23:05.351 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:05.353 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:05.688 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:05.688 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:05.963 [main] INFO  - Initiate the Google Search with Search key 
+15:23:05.963 [main] INFO  - PageLoadWait is applied
+15:23:05.972 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:05.972 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:09.187 [main] INFO  - Federal Bureau of Investigation (.gov)Actual result
+15:23:09.189 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:09.190 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:09.234 [main] DEBUG - Save content types part
+15:23:09.268 [main] DEBUG - Save package relationships
+15:23:09.271 [main] DEBUG - Save part 'docProps/app.xml'
+15:23:09.271 [main] DEBUG - Save part 'docProps/core.xml'
+15:23:09.273 [main] DEBUG - Save part 'docProps/custom.xml'
+15:23:09.273 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+15:23:09.273 [main] DEBUG - Save part 'xl/styles.xml'
+15:23:09.273 [main] DEBUG - Save part 'xl/workbook.xml'
+15:23:09.274 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+15:23:09.303 [main] INFO  - clear the search bar
+15:23:09.308 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:09.308 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:11.144 [main] INFO  - Initiate the Google Search with Search key 
+15:23:11.144 [main] INFO  - PageLoadWait is applied
+15:23:11.150 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:11.150 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:11.181 [main] INFO  - UnitedStatesZipCodesActual result
+15:23:11.181 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:11.181 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:11.204 [main] DEBUG - Save content types part
+15:23:11.204 [main] DEBUG - Save package relationships
+15:23:11.207 [main] DEBUG - Save part 'docProps/app.xml'
+15:23:11.207 [main] DEBUG - Save part 'docProps/core.xml'
+15:23:11.207 [main] DEBUG - Save part 'docProps/custom.xml'
+15:23:11.209 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+15:23:11.209 [main] DEBUG - Save part 'xl/styles.xml'
+15:23:11.209 [main] DEBUG - Save part 'xl/workbook.xml'
+15:23:11.210 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+15:23:11.235 [main] INFO  - clear the search bar
+15:23:11.235 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:11.235 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:11.504 [main] INFO  - Initiate the Google Search with Search key 
+15:23:11.504 [main] INFO  - PageLoadWait is applied
+15:23:11.511 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:11.512 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:12.337 [main] INFO  - It looks like there aren't many great matches for your searchActual result
+15:23:12.341 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:12.341 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:12.354 [main] DEBUG - Save content types part
+15:23:12.355 [main] DEBUG - Save package relationships
+15:23:12.356 [main] DEBUG - Save part 'docProps/app.xml'
+15:23:12.356 [main] DEBUG - Save part 'docProps/core.xml'
+15:23:12.357 [main] DEBUG - Save part 'docProps/custom.xml'
+15:23:12.357 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+15:23:12.357 [main] DEBUG - Save part 'xl/styles.xml'
+15:23:12.357 [main] DEBUG - Save part 'xl/workbook.xml'
+15:23:12.359 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+15:23:12.382 [main] INFO  - clear the search bar
+15:23:12.382 [main] INFO  - Search initiated
+15:23:12.386 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:12.386 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:12.397 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:12.397 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:12.403 [main] INFO  - Compare the expected search result with actual
+15:23:12.407 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:23:12.407 [main] DEBUG - Parsing relationship: /_rels/.rels
+15:23:12.420 [main] DEBUG - Save content types part
+15:23:12.421 [main] DEBUG - Save package relationships
+15:23:12.422 [main] DEBUG - Save part 'docProps/app.xml'
+15:23:12.422 [main] DEBUG - Save part 'docProps/core.xml'
+15:23:12.423 [main] DEBUG - Save part 'docProps/custom.xml'
+15:23:12.423 [main] DEBUG - Save part 'xl/sharedStrings.xml'
+15:23:12.423 [main] DEBUG - Save part 'xl/styles.xml'
+15:23:12.423 [main] DEBUG - Save part 'xl/workbook.xml'
+15:23:12.425 [main] DEBUG - Save part 'xl/worksheets/sheet1.xml'
+15:23:12.525 [main] INFO  - Quit the browser
+15:23:12.526 [main] INFO  - Test Passed

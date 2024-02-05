@@ -1,11 +1,12 @@
 package com.webautomation.utils;
 
-import java.io.FileInputStream;
+import java.io.*;
 
-import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Iterator;
 
-import java.io.IOException;
-
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -16,81 +17,117 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import org.openqa.selenium.By;
 
-public class ExcelDriven {
+public class ExcelDriven  {
 
-    public static XSSFWorkbook wb;
+      XSSFWorkbook wb;
 
-    public static XSSFSheet sheet;
+      XSSFSheet sheet;
 
-    public static XSSFRow row;
+      XSSFRow row;
 
-    public static XSSFCell cell;
+      XSSFCell cell;
 
-    public static FileInputStream fis;
+      FileInputStream fis;
+      FileOutputStream out;
+      public static String file;
 
-    public static void main(String[] args) throws IOException {
-
-// TODO Auto-generated method stub
-
-        String value=getCelldata(2,2);
-
-        System.out.println(value);
-
-        String value1=getCelldata(1,2);
-
-        System.out.println(value1);
-
-        value=setCelldata("automation",2,2);
-
-        System.out.println(value);
-
+    public ExcelDriven(String file) throws FileNotFoundException {
+        this.file=file;
+        fis = new FileInputStream(file);
     }
 
-    private static String setCellvalue(int i, int j) {
 
-// TODO Auto-generated method stub
-
-        return null;
-
-    }
-
-    public static String getCelldata( int rownum,int col) throws IOException
+    public  String getCelldata(String file,int rownum,int col) throws IOException
 
     {
-
-        fis =new FileInputStream("D:\\data.xlsx");
+        fis = new FileInputStream(file);
 
         wb=new XSSFWorkbook(fis);
 
-        sheet=wb.getSheet("script");
+        sheet=wb.getSheetAt(0);
 
-        row=sheet.getRow(2);
+        row=sheet.getRow(rownum);
 
-        cell=row.getCell(2);
+        cell=row.getCell(col);
+        String s =cell.getStringCellValue();
+        fis.close();
+        return s;
 
-        return cell.getStringCellValue();
 
     }
 
-    public static String setCelldata(String text,int rownum,int col) throws IOException
+    public  void setCelldata(String file,String text,int rownum,int col) throws IOException
 
     {
-
-        fis =new FileInputStream("D:\\data.xlsx");
-
+        fis = new FileInputStream(file);
         wb=new XSSFWorkbook(fis);
 
-        sheet=wb.getSheet("script");
+        sheet=wb.getSheetAt(0);
 
-        row=sheet.getRow(2);
+        row=sheet.getRow(rownum);
 
-        cell=row.getCell(2);
+        Cell cell = row.createCell(col);
+
+        cell=row.getCell(col);
 
         cell.setCellValue(text);
 
-        String celldata1= cell.getStringCellValue();
+        out = new FileOutputStream(new File(file));
 
-        return celldata1;
+        wb.write(out);
+        out.close();
+
+    }
+    public int getRowCount() throws IOException {
+        int rowCount=0;
+        wb=new XSSFWorkbook(fis);
+
+        sheet=wb.getSheetAt(0);
+
+        rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum()+1;
+
+        return rowCount;
+    }
+
+    public ArrayList<String> getColumnData(String file,int col) throws IOException {
+        //fileInputStream argument
+        ArrayList<String> a = new ArrayList<String>();
+        fis = new FileInputStream(file);
+        wb=new XSSFWorkbook(fis);
+        sheet=wb.getSheetAt(0);
+        int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum()+1;
+
+        for (int i = 1; i < rowCount; i++) {
+
+            Row row = sheet.getRow(i);
+
+            a.add(row.getCell(col).getStringCellValue());
+
+        }
+        fis.close();
+        return a;
+
+    }
+
+    public void cleanColumnData(String file,int col) throws IOException {
+        fis = new FileInputStream(file);
+        wb=new XSSFWorkbook(fis);
+        sheet=wb.getSheetAt(0);
+        int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum()+1;
+
+        for (int i = 1; i < rowCount; i++) {
+            Row row = sheet.getRow(i);
+            Cell cell = row.getCell(col);
+            if (cell != null) {
+                cell.setCellValue(""); // Clear the cell value
+            }
+        }
+        out = new FileOutputStream(new File(file));
+        wb.write(out);
+
+        fis.close();
+        out.close();
+        wb.close();
 
     }
 
